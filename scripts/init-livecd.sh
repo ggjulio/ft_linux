@@ -6,7 +6,7 @@ export LFS=/mnt/lfs
 
 mkdir -p $LFS
 mount -v -t ext4 /dev/sda3 $LFS
-mount -v -t ext4 /dev/sda2 $LFS/boot
+mount -v -t ext2 /dev/sda2 $LFS/boot
 
 /sbin/swapon -v /dev/sda1 # ensure swap partition is enabled
 
