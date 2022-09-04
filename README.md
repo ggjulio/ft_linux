@@ -1,0 +1,1 @@
+- https://github.com/nu11secur1ty/All-Stages-of-Linux-Booting-Process-Architecture
