@@ -9,3 +9,4 @@
 
 
 - https://github.com/nu11secur1ty/All-Stages-of-Linux-Booting-Process-Architecture
+- [boot chicken egg problem](https://www.youtube.com/watch?v=MFwH6BVKoJg)
