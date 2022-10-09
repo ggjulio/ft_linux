@@ -3,12 +3,17 @@
 sudo su -
 
 export LFS=/mnt/lfs
-
 mkdir -p $LFS
-mount -v -t ext4 /dev/sda3 $LFS
-mount -v -t ext2 /dev/sda2 $LFS/boot
 
+# !!!!!! SDA OR SDB ?????????
+#SDA
+mount -v -t ext4 /dev/sda3 $LFS
+mount -v -t ext4 /dev/sda2 $LFS/boot
 /sbin/swapon -v /dev/sda1 # ensure swap partition is enabled
+# SDB
+mount -v -t ext4 /dev/sdb3 $LFS
+mount -v -t ext4 /dev/sdb2 $LFS/boot
+/sbin/swapon -v /dev/sdb1 # ensure swap partition is enabled
 
 groupadd lfs
 useradd -s /bin/bash -g lfs -m -k /dev/null lfs
@@ -71,3 +76,9 @@ passwd lfs # password: ft_linux_42
 		
 		export MAKEFLAGS='-j4' # to parallelize compilation when the host have multiple cpus
 #END
+
+
+make defconfig
+make kvmconfig
+
+# extraversion || localversion
