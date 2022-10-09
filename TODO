@@ -1,0 +1,11 @@
+- [x] The kernel sources must be in /usr/src/kernel-$(version)
+- [x] You must use at least 3 differents partitions. (root, /boot and a swap partition).
+- [x] Your distro must implement a kernel_module loader, like udev. (not included in sysV, but included in systemd)
+- [x] The kernel version must contain your student login in it. Something like ‘Linux kernel 4.1.2-<student_login>‘
+- [x] The distribution hostname must be your student login
+- [x] The kernel binary located in /boot must be named like this:
+vmlinuz-<linux_version>-<student_login>. Adapt your bootloader configuration
+to that.
+
+- [x] Mandatory parts
+- [x] Bonus parts
